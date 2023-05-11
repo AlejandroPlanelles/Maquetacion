@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height:10%;
+    background-color: rgb(28, 28, 143);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+    .header_transporte{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .header_hoteles{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .header_transporte p{
+        font-style: normal;
+        font-size: 20px;
+        color: white
+    }
+    .header_hoteles p{
+        font-style: normal;
+        font-size: 20px;
+        color: white
+    }
+.cuerpo{
+    width: 100%;
+    height: 90%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+    .cuerpo_agencia{
+        width: 100%;
+        height: 70%;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+        .cuerpo_agencia_texto{
+            width: 45%;
+            height: 85%;
+            border: 2px solid green;
+            display:flex ;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+            .cuerpo_agencia_texto_titulo{
+                width: 55%;
+                height: 15%;
+                border: 2px solid blue;
+                font-style: unset;
+            }
+            .cuerpo_agencia_texto_descripcion{
+                width: 95%;
+                height: 85%;
+                border:2px solid blue;
+                font-style:unset;
+                font-size: 25px;
+            }
+        .cuerpo_agencia_usuario{
+            width: 55%;
+            height: 95%;
+            border: 2px solid green;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+            .cuerpo_agencia_usuario_titulo{
+                width: 27%;
+                height: 10%;
+                border:2px solid blue
+            }
+            .cuerpo_agencia_usuario_formulario{
+                width: 95%;
+                height: 40%;
+                border: 2px solid blue;
+            }
+            .cuerpo_agencia_usuario_botones{
+                width: 80%;
+                height: 10%;
+                border: 2px solid blue;
+            }
+            .cuerpo_agencia_usuario_script{
+                width: 95%;
+                height: 40%;
+                border: 2px solid blue;
+            }
+    .cuerpo_fotos{
+        width: 100%;
+        height: 30%;
+        border: 2px solid green;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-content: center;
+    }
+        .cuerpo_fotos_sitios{
+            width: 50%;
+            height: 96%;
+            border: 2px solid green;
+        }
+        .cuerpo_fotos_sitios img{
+            width: 32%;
+            height: 100%;
+        }
+        .cuerpo_fotos_oferta{
+            width: 50%;
+            height: 96%;
+            border:2px solid green;
+        }
+        .cuerpo_fotos_oferta img{
+            width: 32%;
+            height: 100%;
+        }
+        
+
+    
+    
