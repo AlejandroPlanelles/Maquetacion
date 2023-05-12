@@ -10,7 +10,7 @@ main{
 }
 .header{
     width: 100%;
-    height:10%;
+    height: 10%;
     background-color: rgb(28, 28, 143);
     display: flex;
     flex-direction: row;
@@ -47,7 +47,7 @@ main{
 .cuerpo{
     width: 100%;
     height: 90%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +56,7 @@ main{
     .cuerpo_agencia{
         width: 100%;
         height: 70%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -64,9 +64,9 @@ main{
         align-items: center;
     }
         .cuerpo_agencia_texto{
-            width: 45%;
+            width: 50%;
             height: 85%;
-            border: 2px solid green;
+            /* border: 2px solid green; */
             display:flex ;
             flex-direction: column;
             justify-content: center;
@@ -76,20 +76,21 @@ main{
             .cuerpo_agencia_texto_titulo{
                 width: 55%;
                 height: 15%;
-                border: 2px solid blue;
+                /* border: 2px solid blue; */
                 font-style: unset;
             }
             .cuerpo_agencia_texto_descripcion{
                 width: 95%;
                 height: 85%;
-                border:2px solid blue;
+                /* border:2px solid blue; */
                 font-style:unset;
                 font-size: 25px;
             }
+        
         .cuerpo_agencia_usuario{
-            width: 55%;
+            width: 45%;
             height: 95%;
-            border: 2px solid green;
+            /* border: 2px solid green; */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -97,29 +98,42 @@ main{
             align-items: center;
         }
             .cuerpo_agencia_usuario_titulo{
-                width: 27%;
-                height: 10%;
-                border:2px solid blue
+                width: 32%;
+                height: 8%;
+                /* border:2px solid blue */
             }
             .cuerpo_agencia_usuario_formulario{
                 width: 95%;
-                height: 40%;
-                border: 2px solid blue;
+                height: 44%;
+                /* border: 2px solid blue; */
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                
             }
             .cuerpo_agencia_usuario_botones{
                 width: 80%;
-                height: 10%;
-                border: 2px solid blue;
+                height: 8%;
+                /* border: 2px solid blue; */
             }
             .cuerpo_agencia_usuario_script{
                 width: 95%;
                 height: 40%;
-                border: 2px solid blue;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                /* border: 2px solid blue; */
             }
+                .cuerpo_agencia_usuario_script{
+                    width: 80%;
+                    height: 20%;
+                    border: 1px solid black
+                }
     .cuerpo_fotos{
         width: 100%;
         height: 30%;
-        border: 2px solid green;
+        /* border: 2px solid green; */
         display: flex;
         flex-direction: row;
         justify-content:center;
@@ -128,7 +142,7 @@ main{
         .cuerpo_fotos_sitios{
             width: 50%;
             height: 96%;
-            border: 2px solid green;
+            /* border: 2px solid green; */
         }
         .cuerpo_fotos_sitios img{
             width: 32%;
@@ -137,7 +151,7 @@ main{
         .cuerpo_fotos_oferta{
             width: 50%;
             height: 96%;
-            border:2px solid green;
+            /* border:2px solid green; */
         }
         .cuerpo_fotos_oferta img{
             width: 32%;

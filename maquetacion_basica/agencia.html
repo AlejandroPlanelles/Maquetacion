@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="agencia.css">
+   
     <title>Document</title>
 </head>
 <body>
@@ -33,13 +34,39 @@
                         <h2>Busca tu viaje aqui</h2>
                     </div>
                     <div class="cuerpo_agencia_usuario_formulario">
-
+                        <form class="form" >
+                            <ul>
+                                <li>
+                                    <label>Nombre:</label>
+                                        <input class="input" id="Nombre" type="text"required width="300px">
+                                </li>
+                                <li>
+                                    <label>Origen:</label>
+                                        <input class="input" id="Origen" type="text"required width="300px">
+                                </li>
+                                <li>       
+                                    <label">Destino:</label>
+                                        <input class="input" id="Destino" type="text"required width="300px">
+                                </li>
+                                <li>   
+                                    <label>Numero de Personas:</label>
+                                        <input class="input" id="NumerodePersonas" type="number" width="300px">
+                                </li>
+                                <li>
+                                    <label>Ofertas:</label>
+                                        <input class="input" id="Ofertas" type="text"required width="300px">
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                     <div class="cuerpo_agencia_usuario_botones">
-                        <button>Solicita informacion</button>
-                        <button>Filtra tus opciones</button>
+                        <button onclick="info()" type="button">Solicita informacion</button>
+                        <button type="button" onclick="viajes()">Filtra tus opciones</button>
                     </div>
                     <div class="cuerpo_agencia_usuario_script"></div>
+                        <div class="cuerpo_agencia_usuario_script_2">
+                            <p id="imprime"></p>
+                        </div>
                 </div>
             </div>
             <div class="cuerpo_fotos">
@@ -56,5 +83,8 @@
             </div>   
         </div>
     </main>
+   
+
+    <script src="./agenciaBotones.js"></script>
 </body>
 </html>
