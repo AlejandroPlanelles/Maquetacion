@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .header p{
+        color: white;
+        font-size: 20px;
+        font-style: unset;        
+    }
+    .header a{
+        color: rgb(224, 224, 224);
+        font-size: 20px;
+        font-style: unset;
+        text-decoration: none;
+    }
+    .header a:hover{
+        color: blue
+    }
+    .header p:hover{
+        transform: scale(1.5);
+    }
+ .web{
+    width: 100%;
+    height: 90%;
+    /* border: 2px solid rgba(225, 250, 4, 0.767); */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgb(170, 245, 235);    
+}
+    .web_back{
+        width: 90%;
+        height: 30%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+    }
+        .web_back_title{
+            width: 100%;
+            height: 25%;
+            font-size: 25px;
+            font-style: oblique;
+            font-weight: 800;
+            /* border:2px solid blue; */
+        }
+        .web_back_tech{
+            width: 100%;
+            height: 75%;
+            /* border:2px solid blue; */
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+        }
+            .web_back_tech_1{
+                width:20%;
+                height: 100%;
+                /* border:2px solid green; */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+                .web_back_tech_1_img{
+                    width: 50%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                }
+                .web_back_tech_1_txt{
+                    width: 50%;
+                    height: 100%;
+                    text-align: center;
+                    margin-top: 20%;
+                    font-size: 20px;
+                    font-style: oblique;
+                    /* border: 2px solid red; */
+                }
+            .web_back_tech_2{
+                width:20%;
+                height: 100%;
+                /* border:2px solid green; */
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left: 1%;
+            }
+                .web_back_tech_2_img{
+                    width: 50%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                }
+
+                .web_back_tech_2_txt{
+                    width: 50%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                    text-align: center;
+                    margin-top: 20%;
+                    font-size: 20px;
+                    font-style: oblique;
+                }
+    .web_front{
+        width: 90%;
+        height: 30%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+    }
+        .web_front_title{
+            width: 100%;
+            height: 25%;
+            font-size: 25px;
+            font-style: oblique;
+            font-weight: 800;
+            /* border:2px solid blue; */
+        }
+        .web_front_tech{
+            width: 100%;
+            height: 75%;
+            /* border:2px solid blue; */
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+        }
+            .web_front_tech_1{
+                width:20%;
+                height: 100%;
+                /* border:2px solid green; */
+                display: flex;
+                flex-direction: row;
+                justify-content:flex-start;
+                align-items: flex-start;
+            }
+                .web_front_tech_1_img{
+                    width: 50%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                }
+                .web_front_tech_1_txt{
+                    width: 50%;
+                    height: 100%;
+                    text-align: center;
+                    margin-top: 20%;
+                    font-size: 20px;
+                    font-style: oblique;
+                    /* border: 2px solid red; */
+                }
+            .web_front_tech_2{
+                width:20%;
+                height: 100%;
+                /* border:2px solid green; */
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+                .web_front_tech_2_img{
+                    width: 50%;
+                    height: 100%;
+                    margin-left: 5%;
+                    /* border: 2px solid red; */
+                }
+                .web_front_tech_2_txt{
+                    width: 50%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                    text-align: center;
+                    margin-top: 20%;
+                    font-size: 20px;
+                    font-style:oblique;
+                }
+    .web_other{
+        width: 90%;
+        height: 30%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+    }
+        .web_other_title{
+            width: 100%;
+            height: 25%;
+            font-size: 25px;
+            font-style: oblique;
+            font-weight: 800;
+            /* border:2px solid blue; */
+        }
+        .web_other_tech{
+            width: 100%;
+            height: 75%;
+            /* border:2px solid blue; */
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+        }
+            .web_other_tech_1{
+                width:20%;
+                height: 100%;
+                /* border:2px solid green; */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+                .web_other_tech_1_img{
+                    width: 50%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                }
+                .web_other_tech_1_txt{
+                    width: 50%;
+                    height: 100%;
+                    margin-top: 20%;
+                    text-align: center;
+                    font-size: 20px;
+                    font-style: oblique;
+                    /* border: 2px solid red; */
+                }
+            .web_other_tech_2{
+                width:20%;
+                height: 100%;
+                /* border:2px solid green; */
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left: 1%;
+            }
+                .web_other_tech_2_img{
+                    width: 50%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                }
+                .web_other_tech_2_txt{
+                    width: 50%;
+                    height: 100%;
+                    /* border: 2px solid red; */
+                    text-align: center;
+                    margin-top: 20%;
+                    font-size: 20px;
+                    font-style: oblique;
+                }
+.footer{
+    width: 100%;
+    height: 10%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    .footer p{
+        color: black;
+        font-size: 30px;
+        font-style: unset;
+        text-decoration: none;
+    }
+    .footer a{
+        color: black;
+        font-style: unset;
+        text-decoration: none;
+    }
+    .footer a:hover{
+        color:blue
+    }
+
