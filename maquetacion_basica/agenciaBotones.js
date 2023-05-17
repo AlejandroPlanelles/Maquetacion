@@ -1,10 +1,10 @@
 let infoTotal=[];
 function info(){
-let info= document.getElementById("Nombre").value
-let info1= document.getElementById("Origen").value
-let info2=document.getElementById("Destino").value
-let info3= document.getElementById("NumerodePersonas").value
-let info4= document.getElementById("Ofertas").value
+let info= document.getElementById("Nombre").value.toLowerCase()
+let info1= document.getElementById("Origen").value.toLowerCase()
+let info2=document.getElementById("Destino").value.toLowerCase()
+let info3= document.getElementById("NumerodePersonas").value.toLowerCase()
+let info4= document.getElementById("Ofertas").value.toLowerCase()
 let objeto = {
     nombre: info,
     origen: info1,
@@ -20,9 +20,11 @@ console.log(infoTotal)
 }
 
 function viajes(){
-    for (i=0;i<infoTotal.length;i++){
-    if(infoTotal[i].destino.includes("canarias"||"mallorca"|| "galicia")&&(infoTotal[i].destino.includes("CANARIAS"||"MALLORCA"|| "GALICIA")))
-        console.log("hola")
-    //    return document.getElementById("imprime").innerHTML += infoTotal
-    }
+    let datos= infoTotal.filter(i=>(i.destino=="canarias")||(i.destino=="mallorca")||(i.destino=="galicia"))
+    let string="";
+        for (let x=0;x<datos.length;x++){
+            string+=`${datos[x].nombre},${datos[x].origen},${datos[x].destino},${datos[x].ofertas}`
+        }
+    document.getElementById("imprime").innerHTML=string
+    
 }
