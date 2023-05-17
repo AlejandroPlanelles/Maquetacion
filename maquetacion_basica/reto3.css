@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100wh;
+    height: 100vh;
+}
+.padre {
+    width: 1000px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: [x0] 700px [x1]300px [x2];
+    grid-template-rows: [y0]50px [y1]400px [y2]50px [y3];
+    /* background-color: red; */
+}
+    .header{
+        grid-column: x0/x2;
+        grid-row: y0/y1;
+        background-color: black;
+        color:white;
+        text-align: center;
+    }
+    .azul{
+        grid-column: x0/x1;
+        grid-row: y1/y2;
+        background-color: blue;
+        text-align: center;
+        color: white;
+        display: grid;
+        grid-template-columns: [x0] 500px [x1] 200px [x2];
+        grid-template-rows: [y0] 100px [y1] 300px [y2];
+    }
+        .contenido{
+            grid-column: x0/x2;
+            grid-row: y0/y1;
+            border:1px solid white;
+            margin:5px
+        }
+        .texto1{
+            grid-column: x0/x1;
+            grid-row:y1/y2;
+            border:1px solid white;
+            margin:5px
+        }
+        .texto2{
+            grid-column: x1/x2;
+            grid-row:y1/y2;
+            border:1px solid white;
+            margin:5px
+        }
+    .turquesa{
+        grid-column: x1/x2;
+        grid-row: y1/y2;
+        background-color: aqua;
+        text-align: center;
+        color: white;
+        display: grid;
+        grid-template-columns: [x0]1fr [x1];
+        grid-template-rows: [y0] 1fr [y1]1fr [y2]1fr [y3]1fr [y4];
+    }
+        .menu{
+            grid-column: x0/x1;
+            grid-row: y0/y1;
+            border:1px solid black;
+            margin:5px
+        }
+        .menu1{
+            grid-column: x0/x1;
+            grid-row: y1/y2;
+            background-color: black;
+            margin:5px
+        }
+        .menu2{
+            grid-column: x0/x1;
+            grid-row: y2/y2;
+            background-color: black;
+            margin:5px
+        }
+        .menu3{
+            grid-column: x0/x1;
+            grid-row: y3/y4;
+            background-color: black;
+            margin:5px
+        }
+    .purple{
+        grid-column: x0/x2;
+        grid-row: y2/y3;
+        background-color: purple;
+        text-align: center;
+        color: white;
+        display: grid;
+        grid-template-columns: [x0]500px [x1]500px [x2];
+        grid-template-rows: [y0]1fr [y1];
+    }
+        .footer{
+            grid-column: x0/x1;
+            grid-row: y0/y1;
+            border:1px solid black;
+            margin:5px;
+        }
+        .contacto{
+            grid-column: x1/x2;
+            grid-row: y0/y1;
+            border:1px solid black;
+            margin:5px;
+        }
