@@ -23,7 +23,7 @@ function viajes(){
     let datos= infoTotal.filter(i=>(i.destino=="canarias")||(i.destino=="mallorca")||(i.destino=="galicia"))
     let string="";
         for (let x=0;x<datos.length;x++){
-            string+=`${datos[x].nombre},${datos[x].origen},${datos[x].destino},${datos[x].ofertas}`
+            string+=`${datos[x].nombre},${datos[x].origen},${datos[x].destino},${datos[x].ofertas},     `
         }
     document.getElementById("imprime").innerHTML=string
     
