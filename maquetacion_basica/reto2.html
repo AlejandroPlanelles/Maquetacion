@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="reto2.js"></script>
+  </head>
+  <body>
+    <main>
+        <!-- header bootrap -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./fotos/nash!.png" height="50px" width="50px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color:white">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:white">ULTIMAS LLEGADAS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                      CATEGORIAS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <button class="btn" id="botonfinal" type="button" style="background-color: white; color:black; margin-right: 50px;"data-bs-toggle="modal" data-bs-target="#carrito">CARRITO</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+          <!-- body boostrap -->
+          <div class="container overflow-hidden">
+            <div class="row gy-1" style="margin-left:70px;margin-right: 45px; margin-top: 50px;">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="./fotos/pantalones_tallealto.png" class="card-img-top" style="height: 250px; padding-left: 5px;padding-right: 5px;" id="foto">
+                        <div class="card-body">
+                          <h5 class="card-title1" id="titulo1" style="font-size: 12pt">Pantalón suelto gris</h5>
+                          <p class="card-text" style="font-size:10pt">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <br>
+                            <br>
+                            <p href="#" class="precio" id="precio1" style="font-size:10pt">20€
+                            </p>
+                        </p>
+                          <a id="boton1" class="btn btn-dark" style="background-color: black;">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="./fotos/vestido_tunico.png" class="card-img-top" style="height: 250px; padding-left: 5px;padding-right: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title" id="titulo2" style="font-size: 12pt">Vestido Túnico</h5>
+                          <p class="card-text" style="font-size:10pt">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <br>
+                            <br>
+                            <p class="precio" id="precio2" style="font-size:10pt">18€
+                            </p>
+                        </p>
+                          <a id="boton2" href="#" class="btn btn-dark" style="background-color: black;">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="./fotos/falda_print.png" class="card-img-top" style="height: 250px; padding-left: 5px;padding-right: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title" id="titulo3" style="font-size: 12pt">Falda Mid Print</h5>
+                          <p class="card-text" style="font-size:10pt">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <br>
+                            <br>
+                            <p class="precio" id="precio3" style="font-size:10pt">12€
+                            </p>
+                        </p>
+                          <a id="boton3" href="#" class="btn btn-dark" style="background-color: black;">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="./fotos/cardigan_largo_rayas.png" class="card-img-top" style="height: 250px; padding-left: 5px;padding-right: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title" id="titulo4" style="font-size: 12pt">Cardigan Largo Rayas</h5>
+                          <p class="card-text" style="font-size:10pt">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <br>
+                            <br>
+                            <p class="precio" id="precio4" style="font-size:10pt">22€
+                            </p>
+                        </p>
+                          <a id="boton4" href="#" class="btn btn-dark" style="background-color: black;">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="./fotos/falda_mini_zebra.png" class="card-img-top" style="height: 250px; padding-left: 5px;padding-right: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title" id="titulo5" style="font-size: 12px;">Falda Mini Zebra</h5>
+                          <p class="card-text" style="font-size:10pt">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <br>
+                            <br>
+                            <p class="precio" id="precio5" style="font-size:10pt">16€
+                            </p>
+                        </p>
+                            <a id="boton5" class="btn btn-dark" id="hola" style="background-color: black;">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="./fotos/mono_overol.png" class="card-img-top" style="height: 250px; padding-left: 5px;padding-right: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title" id="titulo6" style="font-size: 12pt">Mono Overo</h5>
+                          <p class="card-text" style="font-size:10pt">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <br>
+                            <br>
+                            <p class="precio" id="precio6" style="font-size:10pt">20€
+                            </p>
+                        </p>
+                          <a id="boton6" href="#" class="btn btn-dark" style="background-color: black;">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="./fotos/vestido_jersey.png" class="card-img-top" style="height: 250px; padding-left: 5px;padding-right: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title" id="titulo7" style="font-size: 12pt">Vestido Jersey</h5>
+                          <p class="card-text" style="font-size:10pt">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <br>
+                            <br>
+                            <p class="precio" id="precio7" style="font-size:10pt">24€
+                            </p>
+                        </p>
+                          <a id="boton7" href="#" class="btn btn-dark" style="background-color: black;">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 12rem;">
+                        <img src="./fotos/pantalon_ancho.png" class="card-img-top" style="height: 250px; padding-left: 5px;padding-right: 5px;">
+                        <div class="card-body">
+                          <h5 class="card-title7" id="titulo8" style="font-size: 12pt">Pantalón Anch</h5>
+                          <p class="card-text" style="font-size:10pt">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <br>
+                            <br>
+                            <p class="precio" id="precio8" style="font-size:10pt">10€
+                            </p>
+                        </p>
+                          <a id="boton8" href="#" class="btn btn-dark" style="background-color: black;">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="modal" tabindex="-1" id="carrito" aria-hidden="true" aria-labelledby="modalTitle">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalTitle">
+                   <p id="prenda">aqui van las prendas</p>
+                </div>
+                <div class="modal-footer justify-content-between">
+                  <div class="box1">
+                    <p class="total" id="compra">TOTAL COMPRA</p>
+                  </div>
+                  <div class="box2"> 
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
