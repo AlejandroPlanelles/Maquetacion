@@ -12,10 +12,10 @@ mov.mainCharacterName="Jack"
 mov.isMCU = false
 mov.distributor = "Pixar"
 mov.language ="inglés"
-mov.director=steve
-mov.writer=tolkien
+mov.director="James Cameron"
+mov.writer="James Cameron"
 mov.photo=""
-mov.actors = arr
+mov.actors = "Leonardo di Caprio"
 // mov.printAllHere()
 
 let leo1 = new Profesional("Rusel Crow",48,85,183,false,"American",1,"actor")
@@ -32,10 +32,10 @@ mov1.mainCharacterName="Máximo";
 mov1.isMCU = false;
 mov1.distributor = "20CenturyFox";
 mov1.language ="inglés";
-mov1.director=steve1;
-mov1.writer=tolkien1;
+mov1.director="Ridley Scott";
+mov1.writer="Ridley Scott";
 mov1.photo=""
-mov1.actors = arr1;
+mov1.actors = "Russel Crowe";
 
 let movies=[mov,mov1];
 
@@ -107,5 +107,12 @@ let newmovie1=new Movies (title,year,nationality,gender,language,platform,varMCU
 movies.push(newmovie1);
 
 console.log(movies)
+}
 
+function addMovie(){
+    let newAddMovie="";
+    for (let i=0;i<movies.length;i++){
+        newAddMovie+=`${movies[i].title}<br>${movies[i].year}<br>${movies[i].nationality}<br>${movies[i].gender}<br>${movies[i].language}<br>${movies[i].platform}<br>${movies[i].varMCU}<br>${movies[i].prod}<br>${movies[i].distrib}`
+    }
+document.getElementById("addmovie").innerHTML=newAddMovie
 }
