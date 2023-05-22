@@ -28,20 +28,38 @@
             <div class="web_peli1">
                 <div class="web_peli1_texto" id="peli1"></div>
                 <div class="web_peli1_foto" id="foto1">
-                    <img src="./img/titanic.jpg" style="height: 320px ; width: 250px;">
                 </div>
             </div>
             <div class="web_peli2">
                 <div class="web_peli2_texto" id="peli2"></div>
                 <div class="web_peli2_foto" id="foto2">
-                    <img src="./img/gladiator.jpg" style="height: 320px ; width: 250px;">
                 </div>
             </div>
+            <div class="web_formulario">
+                <div class="web_formulario_tittle"></div>
+                <div class="web_formulario_txt"></div>
+                    <form>
+                        <input type="text" id="title" placeholder="Titulo">
+                        <input type="text" id="year" placeholder="Año de Nacimiento">
+                        <input type="text" id="nationality" placeholder="Nacionalidad">
+                        <input type="text" id="gender" placeholder="Genero">
+                        <input type="text" id="language" placeholder="Idioma">
+                        <input type="text" id="platform" placeholder="Plataforma">
+                        <input type="text" id="MCU" placeholder="Es de MCU">
+                        <input type="text" id="main" placeholder="Protagonista">
+                        <input type="text" id="producer" placeholder="Productor">
+                        <input type="text" id="distribuitor" placeholder="Distribuidor">
+                        <button type="button" onclick="newmovie()">Enviar</button>
+                    </form>
+            </div>
         </div>
-        <script src="movieTest.js"></script>
         <footer class="footer">
             <a href="#header">Volver Arriba</a>
         </footer>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./profesional.js"></script>
+    <script src="./movie.js"></script>
+    <script src="./movieTest.js"></script>
 </body>
 </html>

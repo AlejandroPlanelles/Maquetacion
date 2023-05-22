@@ -52,5 +52,3 @@ printAllHere(){
 
 }
 }
-
-module.export={Movies}

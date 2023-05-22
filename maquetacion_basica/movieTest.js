@@ -1,13 +1,10 @@
-let mylib = require("./profesional")
-let mylib1 = require("./movie")
-
-let leo = new mylib.Profesional("Leonardo di Caprio",48,85,183,false,"American",1,"actor")
-let tom = new mylib.Profesional("Tom Hanks",66,80,183,false,"American",2,"actor")
-let meryl = new mylib.Profesional("Meryl Streep",73,60,168,false,"American",3,"actor")
-let steve = new mylib.Profesional("Steven Spielberg",76,74,172,false,"American",2,"Director")
-let tolkien = new mylib.Profesional("J.R.R. Tolkien",81, 78,176,true,"British",0,"Writer")
+let leo = new Profesional("Leonardo Di Caprio",50,80,183,false,"American",1,"actor")
+let tom = new Profesional("Tom Hanks",66,80,183,false,"American",2,"actor")
+let meryl = new Profesional("Meryl Streep",73,60,168,false,"American",3,"actor")
+let steve = new Profesional("Steven Spielberg",76,74,172,false,"American",2,"Director")
+let tolkien = new Profesional("J.R.R. Tolkien",81, 78,176,true,"British",0,"Writer")
 let arr = [leo,tom,meryl]
-let mov = new mylib1.Movies("Titanic",1998,"american","drama")
+let mov = new Movies("Titanic",1998,"american","drama")
 
 mov.producer= "mi abuela"
 mov.plataforma = "HBO"
@@ -40,6 +37,10 @@ mov1.writer=tolkien1;
 mov1.photo=""
 mov1.actors = arr1;
 
+let movies=[mov,mov1];
+
+
+function movie1(mov){
 document.getElementById("peli1").innerHTML = `
 Título: ${mov.title}<br>
 Año de Lanzamiento: ${mov.releaseYear}<br>
@@ -54,7 +55,15 @@ MCU: ${mov.isMCU}<br>
 Protagonista: ${mov.mainCharacterName}<br>
 Productor: ${mov.producer}<br>
 Distribuidor: ${mov.distributor}<br>`;
+};
 
+function fotoMov(){
+document.getElementById("foto1").innerHTML=
+`<img class="img1" src="./img/titanic.jpg">`
+}
+    
+
+function movie2(mov1){
 document.getElementById("peli2").innerHTML = `
 Título: ${mov1.title}<br>
 Año de Lanzamiento: ${mov1.releaseYear}<br>
@@ -68,4 +77,35 @@ Plataforma: ${mov1.plataforma}<br>
 MCU: ${mov1.isMCU}<br>
 Protagonista: ${mov1.mainCharacterName}<br>
 Productor: ${mov1.producer}<br>
-Distribuidor: ${mov1.distributor}<br>`
+Distribuidor: ${mov1.distributor}<br>`;
+};
+
+function fotoMov2(){
+document.getElementById("foto2").innerHTML=
+`<img class="img1" src="./img/gladiator.jpg">`
+}
+
+movie1(mov);
+fotoMov(mov)
+movie2(mov1);
+fotoMov2(mov1)
+
+function newmovie(){
+let title=document.getElementById("title").value;
+let year=document.getElementById("year").value;
+let nationality=document.getElementById("nationality").value;
+let gender=document.getElementById("gender").value;
+let language=document.getElementById("language").value;
+let platform=document.getElementById("platform").value;
+let varMCU=document.getElementById("MCU").value;
+let main=document.getElementById("main").value;
+let prod=document.getElementById("producer").value;
+let distrib=document.getElementById("distribuitor").value;
+let newmovie1=new Movies (title,year,nationality,gender,language,platform,varMCU,main,prod,distrib)
+
+
+movies.push(newmovie1);
+
+console.log(movies)
+
+}

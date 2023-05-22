@@ -23,4 +23,3 @@ class Profesional{
 
 }
 
-module.export={Profesional}
