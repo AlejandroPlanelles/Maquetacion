@@ -70,56 +70,27 @@ main{
 }
     .web_peli1{
         width: 90%;
-        height: 400px;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         /* border:2px solid red; */
+        margin-top: 50px;
     }
-        .web_peli1_texto{
-            width: 60%;
-            height: 95%;
-            /* border:2px solid green; */
-            font-size: 20px;
-            font-style:oblique;
-            color:white;
+        .web_formulario{
+            width: 40%;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
         }
-        .web_peli1_foto{
-            width: 20%;
-            height: 80%;
-            /* border: 2px solid green; */
-            margin-left: 100px;
-            margin-bottom: 50px;
-        }
-            .web_peli1_foto img{
-                width: 100%;
-            }
-    .web_peli2{
-        width: 90%;
-        height: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        /* border:2px solid red; */
-    }
-        .web_peli2_texto{
-            width: 60%;
-            height: 95%;
-            /* border:2px solid green; */
-            font-size: 20px;
-            font-style:oblique;
-            color:white;
-        }
-        .web_peli2_foto{
-            width: 20%;
-            height: 80%;
-            /* border: 2px solid green; */
-            margin-left: 100px;
-        }
-            .web_peli2_foto img{
-                width: 100%;
+            .web_formulario_txt{
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
             }
 .footer{
 width: 100%;
